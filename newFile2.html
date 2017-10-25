@@ -2,8 +2,25 @@
 <html>
 <head>
 <title>Test</title>
+<style type="text/css">
+#content {
+    display: none;
+}
+#show:target #content {
+    display: inline-block;
+}
+#show:target #open {
+    display: none;
+}
+</style>
 </head>
 <body>
-
+<div id="show">
+    <a href="#show" id="open" class="btn btn-default btn-sm">Open</a>
+    <div id="content">
+        some text... 
+        <a href="#hide" id="close" class="btn btn-default btn-sm">Close</a>
+    </div>
+</div>
 </body>
 </html>
